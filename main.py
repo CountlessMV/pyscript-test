@@ -19,7 +19,7 @@ def plot_data():
     return x,y
 
 
-def set_plot(event):
+def set_plot():
     plot_box=document.querySelector("#plot")
     fig, ax = plt.subplots()
     x,y=plot_data()
