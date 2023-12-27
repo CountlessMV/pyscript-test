@@ -8,11 +8,17 @@
     <title>Pyscript-Test</title>
 </head>
 <body>
+    
     <h1>Hello This Pyscript first page</h1>
     <h2 id="english">Second line added</h2>
     <input type="text" id="uin" placeholder="Type English here..." />
     <button py-click="abc">click ME</button>
-    <!-- <script type="py" src="./main.py" config="./pyscript.json"></script> -->
-    <script type="py" src="./main.py" ></script>
+    <script type="py" src="./main.py" config="./pyscript.json"></script>
+    <div id="plot">Plot goes  here</div>
+    <button py-click="set_plot">
+        Hit Me Hard 🎠
+    </button>
+    <py-script>
+    </py-script>
 </body>
 </html>
