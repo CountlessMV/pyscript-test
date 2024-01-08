@@ -19,7 +19,7 @@ def plot_data():
     return x,y
 
 
-def set_plot():
+def set_plot(event):
     plot_box=document.querySelector("#plot")
     fig, ax = plt.subplots()
     x,y=plot_data()
@@ -37,3 +37,9 @@ def set_plot():
     data = base64.b64encode(buf.getbuffer()).decode("ascii")
     
     plot_box.innerHTML=f"<img src='data:image/png;base64,{data}'/>"
+
+
+
+def clear_plot(event):
+    plot_box=document.querySelector("#plot")
+    plot_box.innerHTML="Plot Goes here"
